@@ -1,91 +1,122 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body, h1, h2, h3, h4, p, ul, ol {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 .container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
     max-width: 1158px;
-    margin: 0 auto;
     padding: 0 15px;
-    display: block;
+  }
 }
 .page-container {
-	min-height: 100vh;
+  min-height: 100vh;
 }
 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    background-color: #FFFFFF;
-    letter-spacing: 0.02em;
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    font-style: normal;
-    letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  letter-spacing: 0.02em;
 }
-/* a:hover, a:focus{
-    color: #404BBF;
-} */
 
 h1 {
-    font-weight: 700;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #ffffff;
+  text-align: center;
+  max-width: 216px;
+}
+@media screen and (min-width: 768px) {
+  h1 {
     font-size: 56px;
     line-height: 1.07;
-    color: #FFFFFF;
-    text-align: center;
     max-width: 496px;
+  }
 }
 h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+@media screen and (min-width: 1158px) {
+  h3 {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.20;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+    line-height: 1.2;
+  }
 }
 p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 .sr-only {
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(100%);
-    margin: -1px;
-    position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+  position: absolute;
 }

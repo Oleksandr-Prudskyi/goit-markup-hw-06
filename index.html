@@ -57,6 +57,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion header -->
@@ -82,8 +87,8 @@
               </div>
               <h3>Strategy</h3>
               <p>
-                Our goal is to identify the business problem to walk away
-                wperfect and creative solution.
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
             <li class="features-content">
@@ -106,8 +111,8 @@
               </div>
               <h3>Diligence</h3>
               <p>
-                Research and confirm brands with the strongest digital growth
-                opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li class="features-content">
@@ -135,6 +140,7 @@
             <li class="team-card">
               <img
                 src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -181,6 +187,7 @@
             <li class="team-card">
               <img
                 src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -227,6 +234,7 @@
             <li class="team-card">
               <img
                 src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -273,6 +281,7 @@
             <li class="team-card">
               <img
                 src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -328,6 +337,10 @@
               <div class="portfolio-img">
                 <img
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -347,6 +360,10 @@
               <div class="portfolio-img">
                 <img
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -366,6 +383,10 @@
               <div class="portfolio-img">
                 <img
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -385,6 +406,10 @@
               <div class="portfolio-img">
                 <img
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -404,6 +429,10 @@
               <div class="portfolio-img">
                 <img
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -423,6 +452,10 @@
               <div class="portfolio-img">
                 <img
                   src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio-6.jpg    1x,
+                    ./images/portfolio-6@2x.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -511,7 +544,77 @@
       </div>
     </footer>
     <!-- #endregion footer -->
-<!-- #region modal -->
+    <!-- #region mobile-menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button
+        class="mobile-menu-close-btn"
+        type="button"
+        aria-label="Close menu"
+      >
+        <svg class="mobile-menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav-list">
+          <li>
+            <a class="mobile-menu-nav-link current" href="#features">Studio</a>
+          </li>
+          <li>
+            <a class="mobile-menu-nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="mobile-menu-nav-link" href="#footer">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-contacts">
+        <ul class="mobile-menu-contacts-list">
+          <li>
+            <a class="mobile-menu-contact-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-menu-socials">
+        <li>
+          <a class="mobile-menu-social-link" href="" target="_blank">
+            <svg class="mobile-menu-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="mobile-menu-social-link" href="" target="_blank">
+            <svg class="mobile-menu-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="mobile-menu-social-link" href="" target="_blank">
+            <svg class="mobile-menu-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="mobile-menu-social-link" href="" target="_blank">
+            <svg class="mobile-menu-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion mobile-menu -->
+    <!-- #region modal -->
     <div class="modal-overlay" id="modal">
       <div class="modal">
         <button class="modal-close-btn" type="button">
@@ -582,7 +685,7 @@
             ></textarea>
           </div>
 
-          <!-- Checkbox (кастомний) -->
+          <!-- Checkbox -->
           <div class="modal-form-check">
             <input
               class="modal-form-checkbox visually-hidden"
@@ -605,8 +708,8 @@
           </div>
           <!-- Submit -->
           <div class="wrap-btn-modal">
-          <button class="modal-form-submit" type="submit">Send</button>
-        </div>
+            <button class="modal-form-submit" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
