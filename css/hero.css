@@ -3,11 +3,8 @@
   padding: 72px 0;
   margin: 0 auto;
   background-color: #2e2f42;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image:
+    linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/hero-bg-mobile.jpg');
   background-size: cover;
   background-position: center;
@@ -16,11 +13,8 @@
 
 @media screen and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
         url('../images/hero-bg-mobile.jpg') 1x,
         url('../images/hero-bg-mobile@2x.jpg') 2x
@@ -31,22 +25,16 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding: 112px 0;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero-bg-tablet.jpg');
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
         url('../images/hero-bg-tablet.jpg') 1x,
         url('../images/hero-bg-tablet@2x.jpg') 2x
@@ -58,22 +46,16 @@
   .hero {
     padding: 188px 0;
     max-width: 1440px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero-bg-desktop.jpg');
   }
 }
 
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
         url('../images/hero-bg-desktop.jpg') 1x,
         url('../images/hero-bg-desktop@2x.jpg') 2x
@@ -112,5 +94,11 @@
 @media screen and (max-width: 767px) {
   .hero .container {
     gap: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .hero .container {
+    gap: 36px;
   }
 }

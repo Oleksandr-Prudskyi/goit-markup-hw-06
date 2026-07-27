@@ -179,6 +179,8 @@
   }
   .wrap-media {
     margin-left: 120px;
-    margin-right: 80px;
+  }
+  .wrap-subscribe {
+    margin-left: auto;
   }
 }
